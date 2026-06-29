@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <link href="./node_modules/leaflet/dist/leaflet.css" rel="stylesheet" />
+    <link rel="icon" href="data:,">
+</head>
+
+<header>
+    <nav>
+        <canvas id="granim-canvas" style="width: 160px; height: 139px;"></canvas>
+    <ul>
+        <li><a href="#">Home page</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Art in Canada</a></li>
+        <li><a href="#">Contact us</a></li>
+    </ul>
+    </nav>
+
+      <h1>Welcome to Phil's Art Studio!</h1>
+
+</header>
+
+<body>
+
+    <section id="introduction">
+    <img src="./images/art_gallery.png" id="gallery">
+    </section>  
+
+    <section id="artwork">
+    <a href="./images/a_daffodil.png" data-lightbox="paintings" data-title="A Daffodil | Laura Muntz Lyall (1910)">Enter the gallery here!</a>
+    <a href="./images/afterglow.png"data-lightbox="paintings" data-title="Florence H. McGillivray | Tom Thomson (c. 1914)"></a>
+    <a href="./images/sunset_sky.png"data-lightbox="paintings" data-title="Sunset Sky | Tom Thomson (1915)"></a>
+    <a href="./images/the_tangled_garden.png"data-lightbox="paintings" data-title="The Tangled Garden | J.E.H. McDonald (1916)"></a>
+    <a href="./images/autumn.png"data-lightbox="paintings" data-title="Autumn | Horatio Walker (1918)"></a>
+    <a href="./images/house_in_brittany.png"data-lightbox="paintings" data-title="House in Brittany | Emily Carr (1919)"></a>
+    </section>
+
+
+    <section class="data">
+        <article style="width: 500px; height: 500px;">
+            <h3>2026 Statistics</h3>
+                <canvas id="visitors"></canvas>
+        </article>
+
+        <article style="width: 500px; height: 500px;">
+        <h3>Our location</h3>
+        <section id="map"></section>
+        </article>
+
+    </section>
+
+    <footer class="company_information">
+        <p>Open from: Monday-Saturday 10 AM-4PM</p>
+        <p>Thank you for visiting!</p>
+    </footer>
+
+    <script src="./node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+    <script src="./node_modules/granim/dist/granim.min.js"></script>
+    <script src="./node_modules/chart.js/dist/chart.umd.min.js"></script>
+    <script src="./node_modules/leaflet/dist/leaflet.js"></script>
+    <script src="javascript.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,152 @@
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+
+/* Navigation links */
+li {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+    font-family: 'Verdana';
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    }
+
+/* Hyperlinks */
+a {
+    color: #0000c2;             
+    font-family: 'Verdana'; 
+    font-size: 24px;          
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+/* Headline */
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #000000;
+  font-family: 'Verdana';
+}
+
+/* Big image container */
+#introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Big image */
+#gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
+/* Lightbox paintings */
+#artwork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+/* Lightbox caption color */
+:root {
+  --lb-text-color: #00F000;
+}
+
+/* Data container */
+.data {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+/* Section titles */
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #8c2300;
+  font-family: 'Verdana';
+}
+
+/* Leaflet map popup */
+.leaflet-popup-content {
+  color: #0000c2;             
+  font-family: 'Verdana'; 
+  font-size: 12px;
+  font-weight: bold; 
+  width: 190px   
+}
+
+/* Footer text */
+.company_information {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  font-family: 'Verdana';
+}
+
+@media (max-width: 768px) {
+
+  li {
+    font-size: 15px;
+  }
+
+  h1 {
+     font-size: 30px;
+  }
+
+  #artwork {
+    max-width: 60vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #gallery {
+  max-width: 60vw;
+  height: auto;
+  }
+
+  /* Chart.js visitors graph */
+  #visitors  {
+  max-width: 50vw;
+  height: auto;
+  }
+
+  /* Leaflet map */
+  #map {
+  max-height: 20vh;
+  width: auto;
+    }
+
+  .company_information {
+     font-size: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  .data {
+    display: flex;
+    flex-direction: column;
+  }
+}
